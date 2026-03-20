@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="org.example.LoginController">
+
+    <!-- TOP -->
+    <top>
+        <HBox style="-fx-background-color: #cfcfcf; -fx-padding: 10;">
+            <Pane HBox.hgrow="ALWAYS"/>
+            <Button text="back" onAction="#goBack"/>
+        </HBox>
+    </top>
+
+    <!-- CENTER -->
+    <center>
+        <VBox spacing="15" alignment="CENTER" style="-fx-padding: 40;">
+
+            <Pane prefHeight="40" style="-fx-background-color: #a07c7c;"/>
+
+            <Label text="Username"/>
+            <TextField prefWidth="250"/>
+
+            <Label text="Password"/>
+            <PasswordField prefWidth="250"/>
+
+            <HBox spacing="20">
+                <Button text="New user" style="-fx-background-color: green; -fx-text-fill: white;" onAction="#newUser"/>
+                <Button text="Login" style="-fx-background-color: #7f8c6b; -fx-text-fill: white;" onAction="#handleLogin"/>
+            </HBox>
+
+        </VBox>
+    </center>
+
+</BorderPane>
