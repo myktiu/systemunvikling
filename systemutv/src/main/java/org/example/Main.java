@@ -21,7 +21,7 @@ public class Main extends Application {
 
   public static void main(String[] args) {
     org.example.DatabaseInitializer.createTables(); // Lager tabellene
-    org.example.CharityImporter.importInitialData(); // Fyller inn organisasjonene
+    org.example.CharityImporter.importFromAPI();; // Fyller inn organisasjonene
     launch();
   }
 }

@@ -17,6 +17,7 @@ public class DatabaseInitializer {
                 + "id INTEGER PRIMARY KEY AUTOINCREMENT,"
                 + "name TEXT UNIQUE NOT NULL,"
                 + "description TEXT,"
+                + "url TEXT,"
                 + "password TEXT," // Lagt til for chLogin
                 + "is_verified INTEGER DEFAULT 1"
                 + ");";
