@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="17f275fc-4327-4e8e-b527-75ceb10fb7b1" name="Changes" comment="MVP 0.1e">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="17f275fc-4327-4e8e-b527-75ceb10fb7b1" name="Changes" comment="MVP 0.2b">
       <change beforePath="$PROJECT_DIR$/.idea/systemunvikling.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/systemunvikling.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/systemutv/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/systemutv/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/systemutv/src/main/java/org/example/Donation.java" beforeDir="false" afterPath="$PROJECT_DIR$/systemutv/src/main/java/org/example/Donation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/systemutv/src/main/java/org/example/login.java" beforeDir="false" afterPath="$PROJECT_DIR$/systemutv/src/main/java/org/example/login.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/systemutv/src/main/java/org/example/userInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/systemutv/src/main/java/org/example/userInfo.java" afterDir="false" />
@@ -100,7 +100,7 @@
       <workItem from="1773866091975" duration="1350000" />
       <workItem from="1773867723813" duration="15013000" />
       <workItem from="1773960673914" duration="2900000" />
-      <workItem from="1773963608847" duration="329000" />
+      <workItem from="1773963608847" duration="3565000" />
     </task>
     <task id="LOCAL-00001" summary="adding things I'm working on">
       <option name="closed" value="true" />
@@ -134,7 +134,23 @@
       <option name="project" value="LOCAL" />
       <updated>1773933314295</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="MVP 0.2a">
+      <option name="closed" value="true" />
+      <created>1773964135169</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1773964135169</updated>
+    </task>
+    <task id="LOCAL-00006" summary="MVP 0.2b">
+      <option name="closed" value="true" />
+      <created>1773964145716</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1773964145716</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,7 +170,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="adding things I'm working on" />
     <MESSAGE value="MVP 0.1e" />
-    <option name="LAST_COMMIT_MESSAGE" value="MVP 0.1e" />
+    <MESSAGE value="MVP 0.2a" />
+    <MESSAGE value="MVP 0.2b" />
+    <option name="LAST_COMMIT_MESSAGE" value="MVP 0.2b" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

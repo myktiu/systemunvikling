@@ -1,11 +1,13 @@
+package org.example;
 /**
+ *
  * Author: Erling Wendt
  * Version: MVP 0.2
  * 19/03/2026
  * This class should allow for a showcase of user info, so that a user can see their own donation history,
  * and potentially change usernames or passwords
  */
-package org.example;
+
 import java.util.List;
 
 

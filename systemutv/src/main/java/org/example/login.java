@@ -1,3 +1,4 @@
+package org.example;
 /**
  * Author: Erling Wendt
  * Version: MVP 0.2
@@ -8,9 +9,9 @@
  * they fit with our systems
  */
 
-package org.example;
 
-public class Login {
+
+public class login {
 
     public userInfo authenticate(String username, String password) {
         String hashed = passwordEncryption.hashPassword(password);
@@ -24,7 +25,7 @@ public class Login {
         // user.setDonationHistory(Donation.getDonationsByUser(user.getUserID()));
         // return user;
         // TEMP mock - fjern når Rohith er klar
-        UserInfo mockUser = new UserInfo();
+        userInfo mockUser = new userInfo();
         mockUser.setPassword("1234"); // hashed automatically inside setPassword
 
         if (username.equals("test") && hashed.equals(mockUser.getPassword())) {
