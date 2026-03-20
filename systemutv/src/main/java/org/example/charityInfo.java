@@ -10,12 +10,13 @@
 package org.example;
 
 import java.util.List;
-
+import org.example.Donation
+import org.example.passwordEncryption
 public class charityInfo {
     private int charityID;
     private String charityName;
     private String description;
-    private List<Donation> donationHistory;
+    private List<org.example.Donation> donationHistory;
     private String chPassword;
     public int getCharityID() { return charityID; }
     public void setCharityID(int charityID) { this.charityID = charityID; }
@@ -32,7 +33,7 @@ public class charityInfo {
     }
 
     public List<Donation> getDonationHistory() { return donationHistory; }
-    public void setDonationHistory(List<Donation> donationHistory) {
+    public void setDonationHistory(List<org.example.Donation> donationHistory) {
         this.donationHistory = donationHistory;
     }
 

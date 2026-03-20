@@ -4,25 +4,26 @@
  * This class should create a login for charities.
  */
 package org.example;
+import org.example.charityInfo
 public class chLogin {
-    public charityInfo authenticate(String username, String password) {
-        String hashed = passwordEncryption.hashPassword(password);
+    public org.example.charityInfo authenticate(String username, String password) {
+        String hashed = org.example.passwordEncryption.hashPassword(password);
 
         // TODO: bytt ut placeholder names her Rohith
         // DBConnection db = DBConnection.getInstance();
-        // if (!db.verifyUser(username, hashed)) return null;
-        // charityInfo user = new charityInfo();
-        // user.setUserID(db.getUserId(username));
-        // user.setUsername(username);
-        // user.setDonationHistory(Donation.getDonationsByUser(user.getUserID()));
-        // return user;
+        // if (!db.verifyCharity(charityName, hashed)) return null;
+        // charityInfo charity = new charityInfo();
+        // charity.setCharityID(db.getUserId(username));
+        // charity.setCharityname(username);
+        // charity.setDonationHistory(Donation.getDonationsByUser(user.getUserID()));
+        // return charity;
         // TEMP mock - fjern når Rohith er klar
         charityInfo mockCharity = new charityInfo();
-        mockCharity.setPassword("1234"); // hashed automatically inside setPassword
+        mockCharity.setChPassword("1234"); // hashed automatically inside setPassword
 
         if (username.equals("test") && hashed.equals(mockCharity.getChPassword())) {
             mockCharity.setCharityID(1);
-            mockCharity.setCharityname(username);
+            mockCharity.setCharityName(username);
             mockCharity.setDonationHistory(Donation.getDonationsByUser(1));
             return mockCharity;
         }

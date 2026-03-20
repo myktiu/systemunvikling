@@ -10,7 +10,7 @@ package org.example;
 
 import java.util.List;
 
-
+import org.example.Donation
 
 public class userInfo {
     private int userID;
