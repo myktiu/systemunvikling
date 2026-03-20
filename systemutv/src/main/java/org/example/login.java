@@ -32,7 +32,7 @@ public class login {
         if (username.equals("test") && hashed.equals(mockUser.getPassword())) {
             mockUser.setUserID(1);
             mockUser.setUsername(username);
-            mockUser.setDonationHistory(Donation.getDonationsByUser(1));
+            mockUser.setDonationHistory(org.example.Donation.getDonationsByUser(1));
             return mockUser;
         }
         return null;

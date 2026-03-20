@@ -11,7 +11,7 @@ import javafx.scene.control.PasswordField;
 
 import java.io.IOException;
 
-public class LoginController {
+public class LoginController<ActionEvent> {
 
   @FXML
   private TextField usernameField;
@@ -38,11 +38,15 @@ public class LoginController {
     String username = usernameField.getText();
     String password = passwordField.getText();
 
-    System.out.println("Login attempt:");
-    System.out.println("Username: " + username);
-    System.out.println("Password: " + password);
+    // DIN OPPGAVE: Kall databasen
+    int userId = org.example.UserDAO.login(username, password);
 
-    // TODO: add real authentication
+    if (userId != -1) {
+      System.out.println("Suksess! Logget inn med ID: " + userId);
+      // Her kan teamet legge til koden for å bytte scene til hovedmenyen
+    } else {
+      System.out.println("Feil brukernavn eller passord.");
+    }
   }
 
   @FXML
