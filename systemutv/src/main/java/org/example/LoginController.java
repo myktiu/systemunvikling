@@ -46,7 +46,9 @@ public class LoginController {
   }
 
   @FXML
-  private void newUser(ActionEvent event) {
-    System.out.println("New user clicked");
+  private void newUser(ActionEvent event) throws IOException {
+    switchScene(event, "register-view.fxml");
   }
+
+
 }
