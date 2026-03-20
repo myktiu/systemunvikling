@@ -16,7 +16,7 @@ public class charityInfo {
     private String charityName;
     private String description;
     private List<Donation> donationHistory;
-
+    private String chPassword;
     public int getCharityID() { return charityID; }
     public void setCharityID(int charityID) { this.charityID = charityID; }
 
@@ -25,6 +25,11 @@ public class charityInfo {
 
     public String getDescription() { return description; }
     public void setDescription(String description) { this.description = description; }
+
+    public String getChPassword() {return chPassword;}
+    public void setChPassword(String newPassword) {
+        this.chPassword = passwordEncryption.hashPassword(newPassword);
+    }
 
     public List<Donation> getDonationHistory() { return donationHistory; }
     public void setDonationHistory(List<Donation> donationHistory) {

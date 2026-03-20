@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="17f275fc-4327-4e8e-b527-75ceb10fb7b1" name="Changes" comment="MVP 0.2b">
-      <change beforePath="$PROJECT_DIR$/.idea/systemunvikling.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/systemunvikling.iml" afterDir="false" />
+    <list default="true" id="17f275fc-4327-4e8e-b527-75ceb10fb7b1" name="Changes" comment="MVP 0.2c">
+      <change afterPath="$PROJECT_DIR$/systemutv/src/main/java/org/example/chLogin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/systemutv/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/systemutv/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/systemutv/src/main/java/org/example/Donation.java" beforeDir="false" afterPath="$PROJECT_DIR$/systemutv/src/main/java/org/example/Donation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/systemutv/src/main/java/org/example/login.java" beforeDir="false" afterPath="$PROJECT_DIR$/systemutv/src/main/java/org/example/login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/systemutv/src/main/java/org/example/userInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/systemutv/src/main/java/org/example/userInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/systemutv/src/main/java/org/example/charityInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/systemutv/src/main/java/org/example/charityInfo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +36,9 @@
     &quot;accountId&quot;: &quot;b92370e1-8104-4fdc-aa03-d2a84550dcb1&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -100,7 +100,7 @@
       <workItem from="1773866091975" duration="1350000" />
       <workItem from="1773867723813" duration="15013000" />
       <workItem from="1773960673914" duration="2900000" />
-      <workItem from="1773963608847" duration="3565000" />
+      <workItem from="1773963608847" duration="5007000" />
     </task>
     <task id="LOCAL-00001" summary="adding things I'm working on">
       <option name="closed" value="true" />
@@ -150,7 +150,15 @@
       <option name="project" value="LOCAL" />
       <updated>1773964145716</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="MVP 0.2c">
+      <option name="closed" value="true" />
+      <created>1773967901646</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1773967901646</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,7 +180,8 @@
     <MESSAGE value="MVP 0.1e" />
     <MESSAGE value="MVP 0.2a" />
     <MESSAGE value="MVP 0.2b" />
-    <option name="LAST_COMMIT_MESSAGE" value="MVP 0.2b" />
+    <MESSAGE value="MVP 0.2c" />
+    <option name="LAST_COMMIT_MESSAGE" value="MVP 0.2c" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
