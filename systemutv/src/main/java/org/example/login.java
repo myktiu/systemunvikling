@@ -9,32 +9,45 @@ package org.example;
  * they fit with our systems
  */
 
-
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import org.example.userInfo;
 import org.example.passwordEncryption;
+
 public class login {
 
-    public userInfo authenticate(String username, String password) {
-        String hashed = passwordEncryption.hashPassword(password);
+  public userInfo authenticate(String username, String password) {
+    String hashed = passwordEncryption.hashPassword(password);
+    String sql = "SELECT * FROM Users WHERE username = ? AND password = ?";
 
-        // TODO: bytt ut placeholder names her Rohith
-        // DBConnection db = DBConnection.getInstance();
-        // if (!db.verifyUser(username, hashed)) return null;
-        // UserInfo user = new UserInfo();
-        // user.setUserID(db.getUserId(username));
-        // user.setUsername(username);
-        // user.setDonationHistory(Donation.getDonationsByUser(user.getUserID()));
-        // return user;
-        // TEMP mock - fjern når Rohith er klar
-        userInfo mockUser = new userInfo();
-        mockUser.setPassword("1234"); // hashed automatically inside setPassword
+    try (Connection conn = DatabaseManager.getConnection();
+         PreparedStatement pstmt = conn.prepareStatement(sql)) {
 
-        if (username.equals("test") && hashed.equals(mockUser.getPassword())) {
-            mockUser.setUserID(1);
-            mockUser.setUsername(username);
-            mockUser.setDonationHistory(org.example.Donation.getDonationsByUser(1));
-            return mockUser;
+      pstmt.setString(1, username);
+      pstmt.setString(2, hashed);
+
+      try (ResultSet rs = pstmt.executeQuery()) {
+        if (rs.next()) {
+          // User found, build userInfo object
+          userInfo user = new userInfo();
+          user.setUserID(rs.getInt("id"));
+          user.setUsername(rs.getString("username"));
+
+          // Load donation history for this user
+          user.setDonationHistory(Donation.getDonationsByUser(user.getUserID()));
+
+          System.out.println("Login successful for user: " + username);
+          return user;
         }
-        return null;
+      }
+
+    } catch (SQLException e) {
+      System.err.println("Database error during login: " + e.getMessage());
     }
+
+    // Return null if username/password invalid
+    return null;
+  }
 }

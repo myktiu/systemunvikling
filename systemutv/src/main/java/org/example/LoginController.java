@@ -11,7 +11,7 @@ import javafx.scene.control.PasswordField;
 
 import java.io.IOException;
 
-public class LoginController<ActionEvent> {
+public class LoginController{
 
   @FXML
   private TextField usernameField;
@@ -34,7 +34,7 @@ public class LoginController<ActionEvent> {
   }
 
   @FXML
-  private void handleLogin(ActionEvent event) {
+  private void handleLogin(ActionEvent event) throws IOException {
     String username = usernameField.getText();
     String password = passwordField.getText();
 
@@ -43,7 +43,8 @@ public class LoginController<ActionEvent> {
 
     if (userId != -1) {
       System.out.println("Suksess! Logget inn med ID: " + userId);
-      // Her kan teamet legge til koden for å bytte scene til hovedmenyen
+
+      switchScene(event, "main-view.fxml");
     } else {
       System.out.println("Feil brukernavn eller passord.");
     }
