@@ -10,8 +10,8 @@
 package org.example;
 
 import java.util.List;
-import org.example.Donation
-import org.example.passwordEncryption
+import org.example.Donation;
+import org.example.passwordEncryption;
 public class charityInfo {
     private int charityID;
     private String charityName;

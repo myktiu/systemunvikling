@@ -12,8 +12,8 @@ package org.example;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
-import org.example.userInfo
-import org.example.charityInfo
+import org.example.userInfo;
+import org.example.charityInfo;
 public class Donation {
     private int donorId;
     private int charityId;

@@ -10,7 +10,8 @@ package org.example;
  */
 
 
-import org.example.userInfo
+import org.example.userInfo;
+import org.example.passwordEncryption;
 public class login {
 
     public userInfo authenticate(String username, String password) {

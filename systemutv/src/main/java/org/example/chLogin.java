@@ -4,7 +4,7 @@
  * This class should create a login for charities.
  */
 package org.example;
-import org.example.charityInfo
+import org.example.charityInfo;
 public class chLogin {
     public org.example.charityInfo authenticate(String username, String password) {
         String hashed = org.example.passwordEncryption.hashPassword(password);
