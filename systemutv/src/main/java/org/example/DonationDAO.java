@@ -43,4 +43,23 @@ public class DonationDAO {
         }
         return list;
     }
+  public static double getTotalByCharity(int charityId) {
+    String sql = "SELECT SUM(amount) as total FROM Donations WHERE charity_id = ?";
+
+    try (Connection conn = DatabaseManager.getConnection();
+         PreparedStatement pstmt = conn.prepareStatement(sql)) {
+
+      pstmt.setInt(1, charityId);
+      ResultSet rs = pstmt.executeQuery();
+
+      if (rs.next()) {
+        return rs.getDouble("total");
+      }
+
+    } catch (SQLException e) {
+      e.printStackTrace();
+    }
+
+    return 0;
+  }
 }

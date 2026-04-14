@@ -57,7 +57,6 @@ public class Donation {
     }
 
     public void sendToDB() {
-        // TODO Rohith: bytt ut med ekte DB kall
-        // DBConnection.getInstance().saveDonation(this);
+      DonationDAO.saveDonation(donorId, charityId, amount);
     }
 }

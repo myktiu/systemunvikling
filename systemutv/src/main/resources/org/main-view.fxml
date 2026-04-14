@@ -25,13 +25,23 @@
             </VBox>
 
             <!-- MIDDLE PANEL -->
-            <VBox prefWidth="200" style="-fx-background-color: #d9d9d9;">
-                <Label text="Leaders" style="-fx-background-color: #7a6b6b; -fx-text-fill: white; -fx-padding: 5;"/>
+            <VBox prefWidth="200" style="-fx-background-color: #d9d9d9;" spacing="10">
+
+                <Label text="Top 10"
+                       style="-fx-background-color: #7a6b6b; -fx-text-fill: white; -fx-padding: 5;"/>
+
+                <ListView fx:id="topListView" VBox.vgrow="ALWAYS"/>
+
             </VBox>
 
             <!-- RIGHT PANEL -->
-            <VBox prefWidth="200" style="-fx-background-color: #d9d9d9;">
-                <Label text="Our choice" style="-fx-background-color: #7a6b6b; -fx-text-fill: white; -fx-padding: 5;"/>
+            <VBox prefWidth="200" style="-fx-background-color: #d9d9d9;" spacing="10">
+
+                <Label text="Random 10"
+                       style="-fx-background-color: #7a6b6b; -fx-text-fill: white; -fx-padding: 5;"/>
+
+                <ListView fx:id="randomListView" VBox.vgrow="ALWAYS"/>
+
             </VBox>
 
         </HBox>
