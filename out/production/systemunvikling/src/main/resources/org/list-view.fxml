@@ -9,6 +9,9 @@
     <top>
         <HBox spacing="20" style="-fx-background-color: #b06060; -fx-padding: 10;">
             <Label text="Name" style="-fx-text-fill: white;"/>
+
+            <TextField fx:id="searchField" promptText="Search..." prefWidth="200"/>
+
             <Pane HBox.hgrow="ALWAYS"/>
             <Label text="filter by"/>
             <Label text="cause"/>
@@ -20,6 +23,11 @@
     <!-- CONTENT -->
     <center>
         <VBox style="-fx-background-color: #d9d9d9;"/>
+
+        <ListView fx:id="charityListView" VBox.vgrow="ALWAYS"/>
+
+
+
     </center>
 
 </BorderPane>

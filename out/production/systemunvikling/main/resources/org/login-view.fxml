@@ -20,10 +20,10 @@
             <Pane prefHeight="40" style="-fx-background-color: #a07c7c;"/>
 
             <Label text="Username"/>
-            <TextField prefWidth="250"/>
+            <TextField fx:id="usernameField" prefWidth="250"/>
 
             <Label text="Password"/>
-            <PasswordField prefWidth="250"/>
+            <PasswordField fx:id="passwordField" prefWidth="250"/>
 
             <HBox spacing="20">
                 <Button text="New user" style="-fx-background-color: green; -fx-text-fill: white;" onAction="#newUser"/>

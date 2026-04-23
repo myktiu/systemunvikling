@@ -1,0 +1,15 @@
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.*?>
+
+<VBox spacing="15" alignment="CENTER" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="org.example.DonationController">
+
+    <Label text="Make a Donation"/>
+
+    <Label text="Amount"/>
+    <TextField fx:id="amountField"/>
+
+    <Button text="Donate" onAction="#handleDonate"/>
+    <Button text="Back" onAction="#goBack"/>
+
+</VBox>
